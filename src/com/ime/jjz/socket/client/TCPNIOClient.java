@@ -40,6 +40,7 @@ public class TCPNIOClient {
 					}
 				}
 				int nKeys = selector.select();
+				//尤其需要注意selector.select抛出IOException的处理和其不阻塞就直接返回的情况,这两种状况有可能造成cpu消耗100%,
 				if(nKeys > 0){
 					Set<SelectionKey> keys = selector.selectedKeys();
 					

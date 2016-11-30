@@ -1,6 +1,6 @@
-.classpath
-.metadata/
-.project
+/bin/
 .settings/
 RemoteSystemsTempFiles/
-bin/
+.metadata/
+.classpath
+.project
